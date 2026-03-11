@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#course-title {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: #3498db;
+    transform: translateY(-2px);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    grid-template-rows: auto auto auto;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 700;
+    grid-column: 1 / -1;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.card ul, .card ol {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+#lastModified {
+    font-style: italic;
+    color: #bdc3c7;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+
+    #course-title {
+        font-size: 2.5rem;
+    }
+
+    main h1 {
+        font-size: 3.5rem;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+    }
+
+    nav {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #course-title {
+        font-size: 3rem;
+    }
+
+    main h1 {
+        font-size: 4rem;
+    }
+
+    .card h2 {
+        font-size: 2.2rem;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+}
+
+a:focus, button:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media print {
+    header, footer {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .card {
+        page-break-inside: avoid;
+    }
+}

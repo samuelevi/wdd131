@@ -3,9 +3,77 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    
+   <title>WDD 131 - Dynamic Web Fundamentals - Samuel Udueya</title>
+    
+   <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. A course landing page showcasing web development skills and projects. Includes information about the course, learning activities, and final project.">
+    
+   <meta name="author" content="Samuel Udueya">
+    
+   <link rel="stylesheet" href="styles/base.css">
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+   <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-   <h1>Samuel Udueya</h1>
+   <header>
+     <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        
+        <nav>
+            <a href="https://www.linkedin.com/in/samuel-udueya/" target="_blank">LinkedIn</a>
+            
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            
+            <a href="#" target="_blank">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Samuel Udueya</h1>
+
+        <section class="card">
+            <h2>WDD 131 – Dynamic Web Fundamentals</h2>
+            
+            <img src="images/course-image.avif" alt="Web Development Course">
+            
+            <p>
+                This course introduces the fundamentals of web development using HTML, CSS, and JavaScript. 
+                Students will learn to create responsive, accessible, and user-friendly web pages. 
+                Throughout the course, you'll build projects that demonstrate your understanding of 
+                web design principles, semantic HTML, styling techniques, and dynamic JavaScript functionality.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Learning Activities</h2>
+            
+            <img src="images/activities-image.jpg" alt="Learning Activities">
+            
+            <p>
+                Throughout this course, you will complete various learning activities including:
+                <ul>
+                    <li>HTML structure and semantic markup</li>
+                    <li>CSS styling, layout, and responsive design</li>
+                    <li>JavaScript fundamentals and DOM manipulation</li>
+                    <li>Web accessibility and best practices</li>
+                    <li>Performance optimization and testing</li>
+                </ul>
+                These activities build upon each other to create a comprehensive understanding of modern web development.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Samuel Udueya | Delta State | Nigeria
+        </p>
+        
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
