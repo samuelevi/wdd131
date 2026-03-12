@@ -1,82 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="scripts/temples.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Temple Album</h1>
-        <nav>
-            <button id="hamburger" class="hamburger">☰</button>
-            <ul id="nav-menu" class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#old">Old</a></li>
-                <li><a href="#new">New</a></li>
-                <li><a href="#large">Large</a></li>
-                <li><a href="#small">Small</a></li>
-            </ul>
-        </nav>
+      <h1>Temple Album</h1>
+      <nav>
+        <button id="hamburger" class="hamburger">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#old">Old</a></li>
+          <li><a href="#new">New</a></li>
+          <li><a href="#large">Large</a></li>
+          <li><a href="#small">Small</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h2>Temples of the World</h2>
-        
-        <div class="gallery">
-            <figure>
-                <img src="images/angkor-wat.jpg" alt="Angkor Wat Temple" loading="lazy">
-                <figcaption>Angkor Wat</figcaption>
-            </figure>
+      <h2>Temples of the World</h2>
 
-            <figure>
-                <img src="images/parthenon.jpg" alt="The Parthenon" loading="lazy">
-                <figcaption>The Parthenon</figcaption>
-            </figure>
+      <div class="gallery">
+        <figure>
+          <img
+            src="images/angkor-wat.jpg"
+            alt="Angkor Wat Temple"
+            loading="lazy"
+          />
+          <figcaption>Angkor Wat</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/salt-lake.jpg" alt="Salt Lake Temple" loading="lazy">
-                <figcaption>Salt Lake Temple</figcaption>
-            </figure>
+        <figure>
+          <img src="images/parthenon.jpg" alt="The Parthenon" loading="lazy" />
+          <figcaption>The Parthenon</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/bountiful-utah.jpg" alt="Bountiful Utah Temple" loading="lazy">
-                <figcaption>Bountiful Utah Temple</figcaption>
-            </figure>
+        <figure>
+          <img
+            src="images/salt-lake.jpg"
+            alt="Salt Lake Temple"
+            loading="lazy"
+          />
+          <figcaption>Salt Lake Temple</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/konark-sun.jpg" alt="Konark Sun Temple" loading="lazy">
-                <figcaption>Konark Sun Temple</figcaption>
-            </figure>
+        <figure>
+          <img
+            src="images/bountiful-utah.jpg"
+            alt="Bountiful Utah Temple"
+            loading="lazy"
+          />
+          <figcaption>Bountiful Utah Temple</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/akshardham.jpg" alt="Akshardham Temple" loading="lazy">
-                <figcaption>Akshardham Temple</figcaption>
-            </figure>
+        <figure>
+          <img
+            src="images/konark-sun.jpg"
+            alt="Konark Sun Temple"
+            loading="lazy"
+          />
+          <figcaption>Konark Sun Temple</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/bagan.jpg" alt="Bagan Temples" loading="lazy">
-                <figcaption>Bagan Temples</figcaption>
-            </figure>
+        <figure>
+          <img
+            src="images/akshardham.jpg"
+            alt="Akshardham Temple"
+            loading="lazy"
+          />
+          <figcaption>Akshardham Temple</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/shri-swaminarayan.jpg" alt="Shri Swaminarayan Temple" loading="lazy">
-                <figcaption>Shri Swaminarayan Temple</figcaption>
-            </figure>
+        <figure>
+          <img src="images/bagan.jpg" alt="Bagan Temples" loading="lazy" />
+          <figcaption>Bagan Temples</figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/koh-ker.jpg" alt="Koh Ker Temple" loading="lazy">
-                <figcaption>Koh Ker Temple</figcaption>
-            </figure>
-        </div>
+        <figure>
+          <img
+            src="images/shri-swaminarayan.jpg"
+            alt="Shri Swaminarayan Temple"
+            loading="lazy"
+          />
+          <figcaption>Shri Swaminarayan Temple</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/koh-ker.jpg" alt="Koh Ker Temple" loading="lazy" />
+          <figcaption>Koh Ker Temple</figcaption>
+        </figure>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Temple Album | Last Updated: <span id="last-modified"></span></p>
+      <p>
+        &copy; <span id="year"></span> Temple Album | Last Updated:
+        <span id="last-modified"></span>
+      </p>
     </footer>
-</body>
+  </body>
 </html>

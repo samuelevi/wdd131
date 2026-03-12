@@ -100,7 +100,7 @@ main {
 
 main h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: 0.2rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
     text-align: center;
