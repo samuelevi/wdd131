@@ -1,0 +1,112 @@
+@media (min-width: 1200px) {
+    body {
+        background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%);
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .nav-menu {
+        gap: 2rem;
+    }
+
+    .nav-menu li {
+        margin-left: 0;
+    }
+
+    .nav-menu a {
+        padding: 0.75rem 1.5rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .nav-menu a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1.5rem;
+        right: 1.5rem;
+        height: 2px;
+        background-color: var(--secondary-color);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-menu a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    main {
+        max-width: 1400px;
+        padding: 0 3rem;
+    }
+
+    main h2 {
+        font-size: 3.2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    figure {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    figure img {
+        height: 380px;
+        transition: transform 0.4s ease;
+    }
+
+    figure:hover img {
+        transform: scale(1.05);
+    }
+
+    figcaption {
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 2rem;
+        font-size: 1rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    main {
+        max-width: 1600px;
+    }
+
+    .gallery {
+        gap: 3.5rem;
+    }
+
+    figure img {
+        height: 420px;
+    }
+
+    main h2 {
+        font-size: 3.5rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
