@@ -156,6 +156,11 @@ main {
     font-size: 1.8rem;
 }
 
+.weather-section h2::after {
+    content: "☁️";
+    font-size: 1.8rem;
+}
+
 .weather-icon {
     width: 80px;
     height: 80px;
