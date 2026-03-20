@@ -1,5 +1,5 @@
 :root {
-    --color-primary-green: #007A5E; 
+    --color-primary-green: #007A5E;
     --color-accent-red: #E31C23;
     --color-white: #ffffff;
     --color-light-gray: #f5f5f5;
@@ -157,8 +157,9 @@ main {
 }
 
 .weather-icon {
-    font-size: 4rem;
-    margin: var(--spacing-md) 0;
+    width: 80px;
+    height: 80px;
+    margin: var(--spacing-md) auto;
     display: block;
 }
 
@@ -273,8 +274,9 @@ footer p {
     }
 
     .weather-icon {
-        font-size: 3rem;
-        margin: var(--spacing-md) 0;
+        width: 60px;
+        height: 60px;
+        margin: var(--spacing-md) auto;
     }
 
     .weather-content {
@@ -358,8 +360,9 @@ footer p {
     }
 
     .weather-icon {
-        font-size: 3rem;
-        margin: var(--spacing-md) 0;
+        width: 80px;
+        height: 80px;
+        margin: var(--spacing-md) auto;
     }
 
     .weather-content {

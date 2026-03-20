@@ -3,84 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This webpage specifically gives a few details about a state in southern Nigeria, Read...">
+    <meta name="author" content="Samuel Udueya">
     <title>Delta State, Nigeria - Travel Guide</title>
     <link rel="stylesheet" href="./styles/place.css" />
     <script src="./scripts/place.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Delta State</h1>
+        <h1>Delta State</h1>
     </header>
-
 
     <div class="accent-bar"></div>
 
     <main>
-      <section class="hero">
-        <picture>
-          <source
-            media="(max-width: 600px)"
-            srcset="
-              https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop&q=80
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 1024px)"
-            srcset="
-              https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1024&h=600&fit=crop&q=80
-            "
-            type="image/webp"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&h=800&fit=crop&q=80"
-            alt="Delta State landscape with water and vegetation"
-          />
-        </picture>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop&q=80&fm=webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1024&h=600&fit=crop&q=80&fm=webp" type="image/webp">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&h=800&fit=crop&q=80&fm=webp" alt="Delta State landscape with water and vegetation">
+            </picture>
 
-        <section class="data-section">
-          <h2>Data</h2>
-          <div class="data-content">
-            <p><strong>Area:</strong> 17,698 sq km</p>
-            <p><strong>Population:</strong> 4,112,445</p>
-            <p><strong>Capital:</strong> Asaba</p>
-            <p><strong>Languages:</strong> English, Igbo, Urhobo</p>
-            <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
-            <p><strong>Time Zone:</strong> UTC+1</p>
-            <p><strong>Calling Code:</strong> +234</p>
-            <p><strong>Internet TLD:</strong> .ng</p>
-          </div>
+            <section class="data-section">
+                <h2>Data</h2>
+                <div class="data-content">
+                    <p><strong>Area:</strong> 17,698 sq km</p>
+                    <p><strong>Population:</strong> 4,112,445</p>
+                    <p><strong>Capital:</strong> Asaba</p>
+                    <p><strong>Languages:</strong> English, Igbo, Urhobo</p>
+                    <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+                    <p><strong>Time Zone:</strong> UTC+1</p>
+                    <p><strong>Calling Code:</strong> +234</p>
+                    <p><strong>Internet TLD:</strong> .ng</p>
+                </div>
+            </section>
         </section>
-      </section>
 
-
-      <section class="weather-section">
-        <h2>Weather</h2>
-        <div class="weather-icon">⛅</div>
-        <div class="weather-content">
-          <p>
-            <strong>Temperature:</strong> <span id="tempDisplay">28°C</span>
-          </p>
-          <p><strong>Conditions:</strong> Partly Cloudy</p>
-          <p><strong>Wind:</strong> <span id="windDisplay">12 km/h</span></p>
-          <p>
-            <strong>Wind Chill:</strong>
-            <span id="windChillDisplay">Calculating...</span>
-          </p>
-        </div>
-      </section>
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" class="weather-icon">
+            <div class="weather-content">
+                <p><strong>Temperature:</strong> <span id="tempDisplay">28°C</span></p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="windDisplay">12 km/h</span></p>
+                <p><strong>Wind Chill:</strong> <span id="windChillDisplay">Calculating...</span></p>
+            </div>
+        </section>
     </main>
 
- 
     <footer>
-      <p>
-        &copy;<span id="year"></span>
-        <span class="heart">❤️</span>
-        Samuel Udueya
-        <span class="heart">❤️</span>
-        Delta State
-      </p>
-      <p>Last Modification: <span id="lastModified"></span></p>
+        <p>&copy;<span id="year"></span> 
+            <span class="heart">❤️</span> 
+            Samuel Udueya 
+            <span class="heart">❤️</span> 
+            Delta State</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-  </body>
+</body>
 </html>

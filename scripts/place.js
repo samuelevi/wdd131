@@ -6,19 +6,18 @@ function calculateWindChill(temp, windSpeed, unit = 'metric') {
     }
 }
 
-function displayWindChill() {
-    const tempCelsius = 28;   
-    const tempFahrenheit = 82;   
-    const windSpeedKmh = 12;     
-    const windSpeedMph = 7.5;    
 
-  
+function displayWindChill() {
+    const tempCelsius = 28;
+    const tempFahrenheit = 82;
+    const windSpeedKmh = 12; 
+    const windSpeedMph = 7.5;
+
     const metricConditionsMet = tempCelsius <= 10 && windSpeedKmh > 4.8;
     
     const imperialConditionsMet = tempFahrenheit <= 50 && windSpeedMph > 3;
 
     const windChillElement = document.getElementById('windChillDisplay');
-
 
     if (metricConditionsMet) {
         const windChillC = calculateWindChill(tempCelsius, windSpeedKmh, 'metric');
@@ -46,9 +45,7 @@ function displayLastModifiedDate() {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
-  
     displayCurrentYear();
     
     displayLastModifiedDate();
@@ -58,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Page initialized successfully');
     console.log('Delta State, Nigeria - Place Assignment');
 });
-
 
 console.log('Wind Chill Calculator Loaded');
 console.log('Metric conditions: Temperature <= 10°C AND Wind speed > 4.8 km/h');
