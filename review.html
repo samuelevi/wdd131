@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This webpage features a report card for how many times the form has been filled">
+    <meta name="author" content="Samuel Udueya">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <style>
+        .confirmation-message {
+            text-align: center;
+            background-color: #e0e0e0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        .counter-display {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .back-link:hover {
+            background-color: #550055;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+    <main>
+        <div class="confirmation-message">
+            <h2>Thank you for your review!</h2>
+            <p>Your feedback has been successfully submitted.</p>
+            <div id="reviewCounter" class="counter-display">
+                Total reviews submitted: <span id="count">0</span>
+            </div>
+            <a href="form.html" class="back-link">Submit Another Review</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2026 Samuel Udueya</p>
+        <p>Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+           document.getElementById('lastModified').textContent = "Last Modification: " + document.lastModified;
+
+            let reviewCount = localStorage.getItem('reviewCount');
+            
+            if (reviewCount === null) {
+                reviewCount = 1;
+            } else {
+                reviewCount = parseInt(reviewCount) + 1;
+            }
+            
+            localStorage.setItem('reviewCount', reviewCount);
+            document.getElementById('count').textContent = reviewCount;
+        });
+    </script>
+</body>
+</html>

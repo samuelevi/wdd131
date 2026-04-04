@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This webpage features a form to be filled for record keeping">
+    <meta name="author" content="Samuel Udueya">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="./styles/form.css">
+    <script src="./scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating-container">
+                    <div class="star-rating">
+                        <label for="star1">☆</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                        
+                        <label for="star2">☆☆</label>
+                        <input type="radio" id="star2" name="rating" value="2" required>
+                        
+                        <label for="star3">☆☆☆</label>
+                        <input type="radio" id="star3" name="rating" value="3" required>
+                        
+                        <label for="star4">☆☆☆☆</label>
+                        <input type="radio" id="star4" name="rating" value="4" required>
+                        
+                        <label for="star5">☆☆☆☆☆</label>
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installationDate">Date of Installation</label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+
+            <div class="form-group">
+                <label>Which features did you find useful in the product? <br><span>(Check all that apply)</span></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                    <label><input type="checkbox" name="features" value="ease-of-use"> Ease of Use</label>
+                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="writtenReview">Written Review <span>(Optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Your Name <span>(Optional)</span></label>
+                <input type="text" id="userName" name="userName">
+            </div>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2026 Samuel Udueya</p>
+        <p>Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = "Last Modification: " + document.lastModified;
+    </script>
+</body>
+</html>
