@@ -203,6 +203,18 @@ main {
   border: 2px solid var(--border-light);
 }
 
+#swatch-1 {
+  background-color: #4caf50;
+}
+
+#swatch-2 {
+    background-color: #795548; 
+}
+
+#swatch-3 {
+   background-color: #f5f5dc; 
+}
+
 .color-card h5 {
   margin-bottom: 0.75rem;
 }
